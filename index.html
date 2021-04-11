@@ -111,18 +111,12 @@
 
   <hr>
 
-<form>
-      <label for="name" id="name2" >Name</label>
-      <input type="text" id="name" name="name" placeholder="Your name..">
-
-      <label for="email">email</label>
-      <input type="email" id="email" name="email" placeholder="Your email..">
-
-      <label for="message">Subject</label>
-      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-      <button id="submit_msg" type="button">Submit</button>
-    </form>
+  <form>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" placeholder="Your email..">
+    
+    <button id="submit_msg" type="button" onclick="addToFirebase()">Submit</button>
+  </form>
 
 
 
@@ -162,36 +156,20 @@
 
      var db = firebase.firestore();
 
-     db.collection("users").add({
-       first: "Kimi",
-       last: "olo",
-       born: 1815
-     })
-     .then((docRef) => {
-       console.log("Document written with ID: ", docRef.id);
-     })
-     .catch((error) => {
-       console.error("Error adding document: ", error);
-     });
+
+     function addToFirebase() {
+       db.collection("users").add({
+         email: document.getElementById("email").value,
+       })
+       .then((docRef) => {
+         console.log("Document written with ID: ", docRef.id);
+       })
+       .catch((error) => {
+         console.error("Error adding document: ", error);
+       });
+     }
      </script>
 
-     <p id="demo"></p>
-
-<script>
-function toCelsius(f) {
-  return (10) * (f-32);
-}
-document.getElementById("name2").innerHTML = "testing";
-</script>
-
-
 </body>
-
-
-
-
-
-
-
 
 </html>
