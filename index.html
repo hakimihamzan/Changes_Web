@@ -115,7 +115,7 @@
     <h2>Subscribe to our mailing list</h2>
     <label for="inputEmail">Email address</label>
     <input type="email" id="inputEmail" placeholder="Email address" required autofocus>
-    <button onclick="" type="submit">Subscribe!</button>
+    <button onclick="saveSubscribe()" type="submit">Subscribe!</button>
   </form>
   
    <!-- Modal content-->
@@ -139,6 +139,7 @@
             </div>
         </div>
 
+  <script>
     function saveSubscribe(){
         var id = $("#email").val();
 
@@ -161,6 +162,7 @@
            
         }
     }
+  </script>
   
   <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
