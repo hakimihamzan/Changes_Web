@@ -108,16 +108,61 @@
 
   <hr>
   <a href="hobbies.html">Hobbies</a> | <a href="contact.html">Contact Details</a>
-</body>
-
- 
   
-  <form>
+  <hr>
+  
+    <form>
     <h2>Subscribe to our mailing list</h2>
     <label for="inputEmail">Email address</label>
     <input type="email" id="inputEmail" placeholder="Email address" required autofocus>
     <button type="submit">Subscribe!</button>
   </form>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCl-VlOBqwDpBW_m6ITkBG6ggzgmj1ogGE",
+    authDomain: "email-ripping.firebaseapp.com",
+    projectId: "email-ripping",
+    storageBucket: "email-ripping.appspot.com",
+    messagingSenderId: "1063823040868",
+    appId: "1:1063823040868:web:fadaeb2f6addb4100eda71"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  
+  
+  <script>
+  function saveToFirebase(email) {
+    var emailObject = {
+        email: email
+    };
+
+    firebase.database().ref('subscription-entries').push().set(emailObject)
+        .then(function(snapshot) {
+            success(); // some success method
+        }, function(error) {
+            console.log('error' + error);
+            error(); // some error method
+        });
+}
+    
+    saveToFirebase(email);
+    </script>
+
+
+</body>
+
+ 
+  
+
   
   
   
