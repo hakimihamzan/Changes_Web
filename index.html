@@ -115,7 +115,7 @@
     <h2>Subscribe to our mailing list</h2>
     <label for="inputEmail">Email address</label>
     <input type="email" id="inputEmail" placeholder="Email address" required autofocus>
-    <button type="submit">Subscribe!</button>
+    <button onclick="saveSubscribe()"type="submit">Subscribe!</button>
   </form>
   
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -140,21 +140,28 @@
   
   
   <script>
-  function saveToFirebase(email) {
-    var emailObject = {
-        email: email
-    };
+  function saveSubscribe(){
+        var id = $("#email").val();
 
-    firebase.database().ref('subscription-entries').push().set(emailObject)
-        .then(function(snapshot) {
-            success(); // some success method
-        }, function(error) {
-            console.log('error' + error);
-            error(); // some error method
-        });
-}
-    
-    saveToFirebase(email);
+        if(!validateEmail(id)){
+            alert("Enter valid email");
+        }
+        else{
+            var timestamp = new Date().valueOf();
+            var obj = {};
+            obj[timestamp] = id;
+
+            firebase.database().ref('/').update(obj, function(error) {
+                if (error) {
+                    alert("Invalid email");
+                } else {
+                    $("#myModal").modal("hide");
+                    alert("Thank you for subscribing and happy learning");
+                }
+            });
+           
+        }
+    }
     </script>
 
 
