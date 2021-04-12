@@ -114,9 +114,11 @@
   <form>
     <label for="email">email</label>
     <input type="email" id="email" name="email" placeholder="Your email..">
-    
+
     <button id="submit_msg" type="button" onclick="addToFirebase()">Submit</button>
   </form>
+  <p id="submitted"></p>
+
 
 
 
@@ -167,8 +169,14 @@
        .catch((error) => {
          console.error("Error adding document: ", error);
        });
+
+       document.getElementById("submitted").innerHTML = "Submitted";
+       document.getElementById('submit_msg').removeAttribute("onclick");
+
      }
      </script>
+
+
 
 </body>
 
