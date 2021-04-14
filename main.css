@@ -1,13 +1,11 @@
 body {
 
-  background: #36D1DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar-custom {
-    background-color: #005ECB;
-
+  background: #36D1DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
 }
 img {
@@ -16,7 +14,9 @@ img {
 }
 
 .navbar{
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(84,84,84,0.9);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(84,84,84,0.9);
+  box-shadow: 0px 2px 4px 1px rgba(84,84,84,0.9);
     }
 
 .center {
