@@ -60,7 +60,19 @@
       <!-- on any screen size that is large size or bigger, put 6 unit column -->
       <div class="col-lg-6 main-title-left">
         <h1>Sharing your own curated sets of  exercises within the community</h1>
-        <button type="button" class="btn btn-primary btn-md download-button">GET AN EARLY INVITATION</button>
+
+        <button type="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary btn-lg download-button">GET AN EARLY INVITATION</button>
+
+
+        <div class="collapse bottom-collapse" id="collapseExample">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="submit_msg" class="btn btn-secondary" onclick="addToFirebase()" type="button">Submit</button>
+            </div>
+          </div>
+          <p id="submitted"></p>
+        </div>
 
       </div>
       <div class="col-lg-6 main-title-right">
@@ -71,21 +83,6 @@
   </div>
 </section>
 
-  <div>
-    <p></p>
-  </div>
-  <div class="center">
-    <form>
-      <label for="email">email</label>
-      <input type="email" id="email" name="email" placeholder="Your email..">
-
-      <button id="submit_msg" type="button" onclick="addToFirebase()">Submit</button>
-    </form>
-    <p id="submitted"></p>
-
-    <div class="divclass">
-      <button onclick="promalert()">Show prompt alert</button>
-    </div>
     <script>
       function promalert() {
         // A prompt dialog example
@@ -155,7 +152,7 @@
         });
 
       document.getElementById("submitted").innerHTML = "Submitted";
-      document.getElementById('submit_msg').removeAttribute("onclick");
+      document.getElementById("submit_msg").disabled = true;
 
     }
   </script>
