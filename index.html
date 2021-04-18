@@ -7,19 +7,15 @@
   <!-- Bootstrap pluss main CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
- <!-- Bootstrap JS -->
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- Alertify JS -->
-  <script src="alertify.min.js"></script>
-  <link rel="stylesheet" href="alertify.core.css" />
-  <link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
   <!-- Google font - source code pro -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet">
-<!-- Fonts Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet">
+  <!-- Fonts Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
   <title>Changes</title>
 </head>
@@ -28,79 +24,59 @@
 
   <section id="main">
 
+    <div class="container-fluid">
 
-  <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">changes</a>
 
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="">changes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#footer">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cta">Download</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Title -->
-
-    <div class="row main-item">
-      <!-- on any screen size that is large size or bigger, put 6 unit column -->
-      <div class="col-lg-6 main-title-left">
-        <h1>Sharing your own curated sets of  exercises within the community</h1>
-
-        <button type="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary btn-lg download-button">GET AN EARLY INVITATION</button>
-
-
-        <div class="collapse bottom-collapse" id="collapseExample">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button id="submit_msg" class="btn btn-secondary" onclick="addToFirebase()" type="button">Submit</button>
-            </div>
-          </div>
-          <p id="submitted"></p>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
         </div>
+      </nav>
 
+      <!-- Title -->
+
+      <div class="row main-item">
+        <!-- on any screen size that is large size or bigger, put 6 unit column -->
+        <div class="col-lg-6 main-title-left">
+          <h1>Sharing your own curated sets of exercises within the community</h1>
+
+          <button type="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary btn-lg download-button">GET AN EARLY INVITATION</button>
+
+
+          <div class="collapse bottom-collapse" id="collapseExample">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button id="submit_msg" class="btn btn-secondary" onclick="addToFirebase()" type="button">Submit</button>
+              </div>
+            </div>
+            <p id="submitted"></p>
+          </div>
+
+        </div>
+        <div class="col-lg-6 main-title-right">
+          <img src="main-sc.svg" class="main-image" alt="iphone-mockup">
+        </div>
       </div>
-      <div class="col-lg-6 main-title-right">
-        <img src="main-sc.svg" class="main-image" alt="iphone-mockup">
-      </div>
+
     </div>
-
-  </div>
-</section>
-
-    <script>
-      function promalert() {
-        // A prompt dialog example
-        alertify.prompt("Please enter your email to proceed!", function(e, useremail) {
-
-          if (e) {
-            alertify.alert("You entered following email address:" + useremail);
-          } else {
-            alertify.alert("Operation Cancelled!");
-          }
-        }, "Email here");
-      }
-    </script>
-  </div>
-
-
-
-
+  </section>
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -156,9 +132,6 @@
 
     }
   </script>
-
-
-
 </body>
 
 </html>
