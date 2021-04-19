@@ -55,7 +55,7 @@ h1 {
   color: #000;
 }
 
-#features {
+#motivate-photo {
 
   color: #000;
   text-align: center;
@@ -71,6 +71,21 @@ h1 {
 }
 
 .feature-box-text {
-  padding: 10% 1%;
+  padding: 10% 5% 10% 5%;
   text-align: left;
+  color: rgba(94, 80, 72, 1)
+
+}
+
+.feature-box-text h3 {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.feature-list {
+  margin: 1% 12%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
