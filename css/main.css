@@ -132,7 +132,7 @@ padding-right: 5%;
   }
 }
 
-@media (min-width:100px) and (max-width:1099px) {
+@media (max-width:1099px) {
   h1 {
     padding-bottom: 10%;
     padding-top: 8%;
