@@ -11,7 +11,7 @@ h1 {
 }
 
 #main {
-  padding: 2% 13%;
+  padding: 2% 15%;
   background: rgb(131,185,255);
   background: linear-gradient(180deg, rgba(131,185,255,1) 34%, rgba(103,170,255,1) 62%, rgba(0,94,203,1) 91%);
 }
@@ -132,7 +132,7 @@ padding-right: 5%;
   }
 }
 
-@media (min-width:500px) and (max-width:1099px) {
+@media (min-width:100px) and (max-width:1099px) {
   h1 {
     padding-bottom: 10%;
     padding-top: 8%;
