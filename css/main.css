@@ -11,7 +11,7 @@ h1 {
 }
 
 #main {
-  padding: 2% 15%;
+
   background: rgb(131,185,255);
   background: linear-gradient(180deg, rgba(131,185,255,1) 34%, rgba(103,170,255,1) 62%, rgba(0,94,203,1) 91%);
 }
