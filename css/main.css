@@ -81,6 +81,23 @@ li>a:hover {
   text-align: right;
 }
 
+/* Feature section */
+
+.main-feature-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.workout-image {
+  width: 90%;
+}
+
+.feature-box {
+  padding: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
 @media (max-width:1400px) {
   .left-main h1 {
     font-size: 2.5rem;
@@ -92,6 +109,7 @@ li>a:hover {
     width: 100%;
   }
 }
+
 
 @media (max-width:1159px) {
   .left-main h1 {
@@ -105,6 +123,7 @@ li>a:hover {
   }
 }
 
+
 @media (max-width:1015px) {
   .left-main h1 {
     font-size: 1.8rem;
@@ -115,6 +134,7 @@ li>a:hover {
     font-size: 0.8rem;
     width: 100%;
   }
+
 }
 
 @media (max-width:850px) {
@@ -158,6 +178,31 @@ li>a:hover {
     font-size: 3rem;
     padding-bottom: 15%;
     text-align: center;
+  }
+
+  .main-feature-box {
+    grid-template-columns: 1fr;
+
+  }
+
+  .left-side {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .right-side {
+    padding: 15%;
+    justify-items: center;
+
+  }
+
+  .right-side h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .right-side ul {
+    padding-left: 50px;
   }
 
   .main-grid {
@@ -212,6 +257,8 @@ li>a:hover {
     margin: 0;
     text-align: center;
   }
+
+
   .right-main {
     padding: 0;
     padding-bottom: 10%;
@@ -396,6 +443,10 @@ li>a:hover {
     padding: 10px;
     font-size: 0.5rem;
     width: 60%;
+  }
+
+  .right-side h3{
+    font-size: 1rem;
   }
 }
 
