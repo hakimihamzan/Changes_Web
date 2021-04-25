@@ -16,54 +16,45 @@
 </head>
 
 <body>
-
   <!-- Main Section -->
   <section id="main">
 
-    <div class="">
 
-      <!-- Navbar -->
-      <div class="navbar">
-        <div class="container flex">
-          <h1 class="">changes.</h1>
-          <nav>
-            <ul>
-              <li><a href="./journal/main.html">JOURNAL</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+    <!-- Navbar -->
+    <nav class="">
+      <ul class="navbar-flex">
+        <li>changes.</li>
+        <li class="push-left"><a href="./journal/main.html">JOURNAL</a></li>
+      </ul>
+    </nav>
 
-      <!-- Title -->
+    <!-- Main=grid -->
+    <div class="main-grid">
+      <div class="left-main">
+        <h1>Sharing your own curated sets of exercises within the community</h1>
 
-      <div class="container grid-container">
-        <!-- on any screen size that is large size or bigger, put 6 unit column -->
-        <div class="grid-item">
-          <h1>Sharing your own curated sets of exercises within the community</h1>
-
-          <button type="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary btn-lg download-button">GET AN EARLY INVITATION</button>
-          <div class="collapse bottom-collapse" id="collapseExample">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button id="submit_msg" class="btn btn-secondary" onclick="addToFirebase()" type="button">Submit</button>
-              </div>
+        <button type="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary btn-lg download-button">GET AN EARLY INVITATION</button>
+        <div class="collapse bottom-collapse" id="collapseExample">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="submit_msg" class="btn btn-secondary" onclick="addToFirebase()" type="button">Submit</button>
             </div>
-            <p id="submitted"></p>
           </div>
-        </div>
-
-        <div class="grid-item">
-          <img src="images/main-sc.svg" class="main-image" alt="main-screenshot-mockup">
-
+          <p id="submitted"></p>
         </div>
       </div>
 
+      <div class="right-main">
+        <img src="images/main-sc.svg" class="main-img" />
+        <img src="images/main-sc-no-desc.svg" class="main-img-no" />
+      </div>
     </div>
-
   </section>
 
-  <hr style="margin:20%">
+
+
+  <hr style="">
 
   <!-- <section id="motivate-photo">
     <div class="">
