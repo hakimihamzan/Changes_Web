@@ -27,7 +27,7 @@ body {
 .bttn-fill.bttn-lg {
   padding: 10px 50px;
   font-size: 1.5rem;
-  width: 100%;
+  width: 70%;
 }
 
 .bttn-fill.bttn-primary {
@@ -94,8 +94,22 @@ li>a:hover {
 
 .feature-box {
   padding: 1%;
-  align-self: center;
+}
+
+.left-side {
+  text-align: center;
+  padding: 10px;
+}
+
+.right-side {
   justify-self: center;
+  align-self: center;
+
+
+}
+
+.right-side h3 {
+
 }
 
 @media (max-width:1400px) {
@@ -450,6 +464,27 @@ li>a:hover {
   }
 }
 
+
+@media (min-width:2000px) {
+  .left-main h1 {
+    font-size: 7rem;
+  }
+
+  .bttn-fill.bttn-lg {
+    padding: 10px;
+    font-size: 4rem;
+    width: 80%;
+  }
+
+  ul {
+    font-size: 2rem;
+  }
+
+  .main-grid {
+    padding: 5% 13%;
+    padding-bottom: 10%
+  }
+}
 
 
 /*
