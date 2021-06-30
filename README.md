@@ -1,5 +1,5 @@
 # [fitforchange](https://fitforchange.xyz/)
-# Android project suspended -- Decided to pursue ASP.Net (30/06/2021)
+# Suspended -- Decided to pursue ASP.Net (30/06/2021)
 
 This is a landing page for Changes mobile app (Android). It also able to store details of interested users to Firebase. App development journal is also updated from time to time. The Android version repo is not pinned right now but once I start working significantly on it, I'll pin it.
 
